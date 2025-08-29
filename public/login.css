@@ -1,0 +1,26 @@
+/* public/login.css */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.login-container {
+  background: #fff;
+  padding: 28px;
+  width: 360px;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.avatar { font-size: 48px; margin-bottom: 8px; }
+h2 { margin: 8px 0 18px; }
+.input-group { text-align: left; margin-bottom: 12px; }
+.input-group label { font-weight: 600; display: block; margin-bottom: 6px; }
+.input-group input { width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #d1d5db; }
+button { width: 100%; padding: 12px; background: #2563eb; color: #fff; border: 0; border-radius: 8px; cursor: pointer; font-weight: 600; }
+button:hover { background: #1e40af; }
+#errorMsg, #regMsg { color: #d32f2f; margin-top: 8px; min-height: 20px; }

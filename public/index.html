@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Student Management</h1>
+      <small id="helloUser"></small>
+    </div>
+    <div>
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Add / Update Student</h2>
+      <form id="studentForm" autocomplete="off">
+        <input id="name" placeholder="Name" required />
+
+        <!-- Course listbox (scrollable) -->
+        <div class="select-wrap">
+          <label class="sr">Course</label>
+          <select id="course" required>
+        <option value="">Select Course</option>
+        <option value="CSE">CSE</option>
+        <option value="CS">CS</option>
+        <option value="AIML">AIML</option>
+        <option value="DS">DS</option>
+        <option value="IT">IT</option>
+      </select>
+        </div>
+
+        <!-- Roll number -->
+        <input id="rollNumber" placeholder="Roll Number" required />
+
+        <!-- Year listbox (scrollable with Roman numerals) -->
+        <div class="select-wrap">
+          <label class="sr">Year</label>
+          <select id="year" required>
+        <option value="">Select Year</option>
+        <option value="I">I</option>
+        <option value="II">II</option>
+        <option value="III">III</option>
+        <option value="IV">IV</option>
+      </select>
+        </div>
+
+        <button type="submit">Save</button>
+      </form>
+      <div id="msg"></div>
+    </section>
+
+    <section class="card">
+      <div class="search-container">
+        <input id="searchInput" placeholder="🔍 Search by Name, Roll No, Course, Year" />
+      </div>
+
+      <table id="studentsTable">
+        <thead>
+          <tr>
+            <th>Name</th><th>Roll No</th><th>Course</th><th>Year</th><th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
